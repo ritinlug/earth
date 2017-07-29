@@ -1,8 +1,12 @@
+#include<stdio.h>
+#include<conio.h>
 int main()
-{
-	printf("Hello! I'm Akshay Gaikwad\n");
 
-	return 0;
+{
+	clrscr();
+	printf("Hello! I'm Akshay Gaikwad\n");
+	printf("Hello! I'm Sourabh Deshmukh\n");
+	getch();
 }
 
 
