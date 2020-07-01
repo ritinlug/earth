@@ -1,0 +1,14 @@
+name: "Trying to print secrets"
+on:
+  pull_request:
+  push:
+jobs:
+  print-something:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: "Print messages"
+      env:
+        CONF_ENV: ${{ secrets.CONFIDENTIAL }}
+      run: |
+        echo "value of CONFIDENTIAL: ${CONF_ENV}"
